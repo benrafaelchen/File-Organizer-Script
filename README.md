@@ -1,16 +1,19 @@
-# Automated Backup Script
+# File Organizer Automation Script
 
-A simple Bash script to automate the process of creating compressed, timestamped backups for a specified directory. This script helps users quickly back up files and directories to a designated location.
+A Bash script designed to organize files in a specified directory by their file extensions. This script provides options for excluding certain file types and specifying a destination directory for organized files.
 
 ## Features
-- Creates compressed backups of a specified directory using the `tar` command.
-- Adds a timestamp to each backup file for easy tracking and organization.
-- Stores backups in a user-defined destination directory.
+- Organizes files by their extensions, creating folders for each file type.
+- Allows users to exclude specified file extensions from the organization process.
+- Option to set a custom destination directory for organized files.
+- Generates a log file to track organized files and directories created.
 
 ## Usage
-1. Set the `BACKUP_SOURCE` and `BACKUP_DESTINATION` paths in the script.
-2. Run the script to generate a timestamped `.tar.gz` backup file in the destination directory.
+1. Run the script and follow the prompts to enter the source directory.
+2. Optionally, specify file extensions to exclude (e.g., `txt,png`).
+3. Optionally, choose a different destination directory.
+4. The script will organize files and create a log file for your reference.
 
 ## Example
 ```bash
-./backup_script.sh
+./file_organizer.sh
